@@ -1,0 +1,11 @@
+interface:
+  display_name: "Settlement Evidence Desk"
+  short_description: "Reconcile payout email into requested, accepted, pending, and settled revenue."
+  default_prompt: "Use $mermail-settlement-evidence to reconcile earning and payout emails conservatively without moving funds."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "mermail"
+      description: "Mermail workspace and mailbox MCP server"
+      transport: "streamable_http"
+      url: "https://console.mermail.app/mcp"
